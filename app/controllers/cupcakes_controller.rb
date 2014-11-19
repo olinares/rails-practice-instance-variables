@@ -1,4 +1,6 @@
 class CupcakesController < ApplicationController
+
+
   def vanilla
     @toppings = ['sprinkles', 'frosting', 'gummy worms']
   end
@@ -12,10 +14,14 @@ class CupcakesController < ApplicationController
   end
 
   def maple_bacon
-
+    @sizes = ['small', 'medium', 'large']
   end
 
   def red_velvet
+    @ingredients = {
+      chocolate: '1 lb',
+      velvet: '2 tablespoons',
+    }
 
   end
 end
